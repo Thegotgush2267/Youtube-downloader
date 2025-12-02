@@ -1,6 +1,6 @@
-@echo off
+o@echo off
 title Gehana YouTube Downloader
-
+echo NOTE: This is a deprecated version
 :: Check if FFmpeg exists
 ffmpeg -version >nul 2>&1
 if %ERRORLEVEL% NEQ 0 (
@@ -68,4 +68,5 @@ goto :menu
 echo.
 echo Goodbye. Press any key to exit.
 pause >nul
+
 

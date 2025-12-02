@@ -1,6 +1,52 @@
 @echo off
 title Gehana YouTube Downloader
 
+@echo off
+
+ffmpeg -version >nul 2>&1
+if %ERRORLEVEL% NEQ 0 (
+    echo FFmpeg is not installed on this system.
+    echo Would you like to install it?
+    set /p perm=Y/N: 
+
+    if /I "%perm%"=="Y" (
+        :: Check if winget exists
+        where winget >nul 2>&1
+        if %errorlevel% neq 0 (
+            echo Winget not found on this system.
+            echo You need Windows 10/11 with App Installer installed.
+            pause
+            exit /b
+        )
+
+        echo Installing FFmpeg \(Gyan build\)...
+        echo.
+
+        :: Install FFmpeg Gyan exact ID
+        winget install --id Gyan.FFmpeg -e --source winget
+
+        if %errorlevel% neq 0 (
+            echo.
+            echo Something went wrong during installation.
+            pause
+            exit /b
+        )
+
+        echo.
+        echo FFmpeg installation complete, homie.
+        echo Type "ffmpeg -version" to check.
+        echo.
+        pause
+
+    ) else (
+        echo Installation cancelled.
+        pause
+    )
+) else (
+    echo FFmpeg is already installed.
+    pause
+)
+
 :menu
 cls
 echo ---------------------------------------

@@ -4,7 +4,7 @@ echo ===============================
 echo      FFmpeg Installer
 echo ===============================
 echo.
-echo NOTE: Downloader.bat has a built in installe already, this is abandoned
+echo NOTE: Downloader.bat has a built in installer already, this is abandoned
 
 :: Check if winget exists
 where winget >nul 2>&1
@@ -33,4 +33,5 @@ echo FFmpeg installation complete, homie.
 echo Type "ffmpeg -version" to check.
 echo.
 pause
+
 

@@ -1,6 +1,5 @@
 LEGAL NOTICE — READ THIS OR DO NOT USE THE SOFTWARE
 
-Last Updated: [insert date]
 
 This Software and all included scripts, installers, and tools ("the Software") are provided for educational demonstration only.
 If you use this Software for illegal purposes, that is your problem, not mine.

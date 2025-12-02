@@ -48,6 +48,6 @@ GUI version
 
 Drag-and-drop support
 
-A single unified EXE
+A single unified EXE ✔️
 
 Just open an issue or ask — happy to build it.

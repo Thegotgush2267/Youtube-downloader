@@ -69,4 +69,5 @@ README.md       # Documentation
 
 ## License
 
-Open for personal or educational use. Modify freely.
+[GNU GPL 2.0 LICENSE](LICENSE)
+
